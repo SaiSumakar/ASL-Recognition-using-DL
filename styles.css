@@ -1,0 +1,230 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 14px;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+main h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 900px;
+  min-width: 300px;
+  margin-left: 180px;
+}
+
+main button {
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+main button:hover {
+  background-color: #ccc;
+}
+
+/* Second Section */
+.second-section {
+  height: 100vh;
+  background-color: #000;
+  padding: 20px;
+}
+
+.second-section .back-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.second-section .main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+}
+
+.second-section .box {
+  width: 45%;
+  height: 100%;
+  background-color: #ccc; /* Gray boxes */
+  border-radius: 5px;
+}
+
+.second-section .text-box {
+  padding: 10px;
+}
+
+
+
+/* Buttons Updated Position */
+.second-section .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 610px; /* Adjust to fine-tune vertical placement */
+  gap: 20px; /* Space between buttons */
+}
+
+.second-section .button-container {
+  position: absolute;
+  bottom: 20px;
+  
+}
+
+.second-section .stop{
+  left: 200px;
+  
+}
+
+.second-section .buttons button {
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.second-section .buttons button:hover {
+  background-color: #ccc;
+}
+
+/* Position Buttons Below Left Box */
+.second-section .buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  display: flex;
+  gap: 10px;
+}
+
+
+.second-section .buttons button {
+  font-size: 17px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.second-section .buttons button:hover {
+  background-color: #ccc;
+}
+
+
+/* Style for the video feed container */
+#video-feed {
+  position: relative;
+  width: 50%; /* Ensure it fits the container */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a; /* Dark background for contrast */
+  border: 3px solid #ffffff; /* White border */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+  overflow: hidden; /* Prevent video overflow */
+}
+
+/* Style for the video element */
+#video {
+  width: 100%; /* Add some padding inside the container */
+  height: 100%;
+  border-radius: 10px; /* Slight rounding on the video edges */
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.3); /* Glowing effect on video */
+}
+
+
+/* Style for the text-box container */
+.text-box {
+  position: relative;
+  width: 100%; /* Matches the video element width */
+  height: 100%; /* Same height as the video element */
+  background-color: #f5f5f5; /* Light gray background for contrast */
+  border: 2px solid #d3d3d3; /* Subtle gray border */
+  border-radius: 10px; /* Rounded corners for simplicity */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style for the title "Text" at the top-left */
+.text-box p:first-child {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000; /* Black text */
+}
+
+/* Style for dynamic text content */
+.text-box #dynamic-text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Dark gray for readability */
+  overflow-y: auto; /* Scrollable for longer text */
+  word-wrap: break-word; /* Ensure long text wraps nicely */
+  flex-grow: 1; /* Expand to fill available space */
+}
+
+
+video {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1); /* For Safari support */
+}
+
+.content p{
+  width: 70%;
+}
